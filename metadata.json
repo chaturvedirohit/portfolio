@@ -1,0 +1,6 @@
+{
+  "name": "Rohit Chaturvedi Portfolio",
+  "description": "Personal PM portfolio homepage for Rohit Chaturvedi, AGM Product Manager at Matrimony.com building AI products.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

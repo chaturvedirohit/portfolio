@@ -1009,17 +1009,17 @@
           <!-- TODO: what users were doing before -->
           <p>
             <!-- TODO -->
-            TODO: What users were doing before. Traditional touch interactions required navigating multi-step forms and complex filters, creating friction for users attempting to communicate preferences and search criteria quickly.
+            TODO: one line on what users were doing before.
           </p>
           <!-- TODO: why text alone was not enough -->
           <p>
             <!-- TODO -->
-            TODO: Why text alone was not enough. Text inputs suffered from high drop-off on mobile keypads, especially across regional languages and transliterated queries where spoken intent carries far richer context than typed keywords.
+            TODO: one line on why text alone was not enough.
           </p>
           <!-- TODO: what made this worth building now -->
           <p>
             <!-- TODO -->
-            TODO: What made this worth building now. Recent advancements in low-latency speech pipelines, combined with reliable real-time agent orchestration, made natural spoken conversations technically viable and cost-effective at scale.
+            TODO: one line on what made this worth building now.
           </p>
         </div>
       </div>
@@ -1031,28 +1031,28 @@
         <div class="section-head">
           <span class="section-eyebrow">02</span>
           <h2 id="constraints-heading" class="section-h2">What done <em>looks like</em></h2>
-          <p class="section-subtext">The operational boundaries and performance constraints the platform must hold under live traffic.</p>
+          <p class="section-subtext">The constraints this platform has to hold.</p>
         </div>
         <div class="constraint-list">
           <div class="constraint-row">
             <span class="constraint-label">LATENCY BUDGET</span>
             <!-- TODO: target latency budget -->
-            <span class="constraint-val">TODO: Latency budget target across speech-to-text, agent reasoning, and audio return.</span>
+            <span class="constraint-val">TODO</span>
           </div>
           <div class="constraint-row">
             <span class="constraint-label">LANGUAGE COVERAGE</span>
             <!-- TODO: languages, dialects, and mixed-mode expectations -->
-            <span class="constraint-val">TODO: Languages, dialects, and code-mixed speech coverage requirements.</span>
+            <span class="constraint-val">TODO</span>
           </div>
           <div class="constraint-row">
             <span class="constraint-label">FALLBACK BEHAVIOUR</span>
             <!-- TODO: fallback behavior when confidence drops or connection fails -->
-            <span class="constraint-val">TODO: Graceful degradation, reprompt logic, and fallback pathways to human assistance or visual interfaces.</span>
+            <span class="constraint-val">TODO</span>
           </div>
           <div class="constraint-row">
             <span class="constraint-label">COST CEILING</span>
             <!-- TODO: target cost per minute or query -->
-            <span class="constraint-val">TODO: Cost ceiling per conversational turn and per concurrent audio session.</span>
+            <span class="constraint-val">TODO</span>
           </div>
         </div>
       </div>
@@ -1064,12 +1064,12 @@
         <div class="section-head">
           <span class="section-eyebrow">03</span>
           <h2 id="pipeline-heading" class="section-h2">The <em>pipeline</em></h2>
-          <p class="section-subtext">Audio streaming, real-time transcription, agent decision loops, and low-latency synthesis joined as one continuous pipeline.</p>
+          <p class="section-subtext">How the pieces fit together.</p>
         </div>
 
         <div class="pipeline-box">
           <div class="pipeline-diagram">audio in  -&gt;  STT  -&gt;  orchestration  -&gt;  TTS  -&gt;  audio out</div>
-          <div class="pipeline-caption">Single full-duplex session stream with client-side VAD and server-side interruption detection.</div>
+          <div class="pipeline-caption">TODO: one line describing the pipeline.</div>
         </div>
 
         <div class="sub-blocks">
@@ -1078,7 +1078,7 @@
             <!-- TODO: details on STT architecture and streaming transcription -->
             <p class="sub-block-p">
               <!-- TODO -->
-              TODO: Streaming transcription model evaluation, endpointing strategies, and handling background ambient noise across diverse phone hardware.
+              TODO: one line on the speech-to-text choice.
             </p>
           </div>
           <div class="sub-block">
@@ -1086,7 +1086,7 @@
             <!-- TODO: details on dialog state management and tool execution -->
             <p class="sub-block-p">
               <!-- TODO -->
-              TODO: Dialog state management, dynamic context trimming, tool calling latency, and maintaining conversation history across multi-turn exchanges.
+              TODO: one line on the orchestration layer.
             </p>
           </div>
           <div class="sub-block">
@@ -1094,7 +1094,7 @@
             <!-- TODO: details on TTS generation and audio streaming -->
             <p class="sub-block-p">
               <!-- TODO -->
-              TODO: Neural speech synthesis selection, sentence chunk streaming, voice persona calibration, and immediate playback cancellation on barge-in.
+              TODO: one line on the text-to-speech choice.
             </p>
           </div>
         </div>
@@ -1107,7 +1107,7 @@
         <div class="section-head">
           <span class="section-eyebrow">04</span>
           <h2 id="decisions-heading" class="section-h2">Decisions that <em>mattered</em></h2>
-          <p class="section-subtext">Key trade-offs evaluated on live test sessions rather than benchmark claims.</p>
+          <p class="section-subtext">The calls that shaped the platform.</p>
         </div>
 
         <div class="decisions-stack">
@@ -1119,22 +1119,22 @@
               <div class="decision-row">
                 <span class="decision-label">CONTEXT</span>
                 <!-- TODO: Context for decision 01 -->
-                <span class="decision-text">TODO: Need to balance turn-taking speed against transcription accuracy across variable mobile networks.</span>
+                <span class="decision-text">TODO: what was going on.</span>
               </div>
               <div class="decision-row">
                 <span class="decision-label">OPTIONS</span>
                 <!-- TODO: Options evaluated for decision 01 -->
-                <span class="decision-text">TODO: WebSocket streaming with partial hypotheses versus chunked audio uploads on silence detection.</span>
+                <span class="decision-text">TODO: what the options were.</span>
               </div>
               <div class="decision-row decision-row-call">
                 <span class="decision-label">CALL</span>
                 <!-- TODO: Final call for decision 01 -->
-                <span class="decision-text">TODO: Selected streaming transcription with custom client-side voice activity detection.</span>
+                <span class="decision-text">TODO: what you decided.</span>
               </div>
               <div class="decision-row">
                 <span class="decision-label">WHY</span>
                 <!-- TODO: Rationale for decision 01 -->
-                <span class="decision-text">TODO: Reduced time-to-first-token by streaming tokens while the user was still completing natural sentence pauses.</span>
+                <span class="decision-text">TODO: why.</span>
               </div>
             </div>
           </article>
@@ -1147,22 +1147,22 @@
               <div class="decision-row">
                 <span class="decision-label">CONTEXT</span>
                 <!-- TODO: Context for decision 02 -->
-                <span class="decision-text">TODO: Complex search queries and multi-system database lookups introduced dead air during complex turns.</span>
+                <span class="decision-text">TODO: what was going on.</span>
               </div>
               <div class="decision-row">
                 <span class="decision-label">OPTIONS</span>
                 <!-- TODO: Options evaluated for decision 02 -->
-                <span class="decision-text">TODO: Complete silence until full response versus conversational acoustic filler cues versus immediate partial confirmations.</span>
+                <span class="decision-text">TODO: what the options were.</span>
               </div>
               <div class="decision-row decision-row-call">
                 <span class="decision-label">CALL</span>
                 <!-- TODO: Final call for decision 02 -->
-                <span class="decision-text">TODO: Configured a dynamic acoustic filler policy triggering after a strict latency threshold.</span>
+                <span class="decision-text">TODO: what you decided.</span>
               </div>
               <div class="decision-row">
                 <span class="decision-label">WHY</span>
                 <!-- TODO: Rationale for decision 02 -->
-                <span class="decision-text">TODO: User drop-offs increased sharply if dead air exceeded expectations, whereas brief verbal acknowledgement held user attention.</span>
+                <span class="decision-text">TODO: why.</span>
               </div>
             </div>
           </article>
@@ -1175,22 +1175,22 @@
               <div class="decision-row">
                 <span class="decision-label">CONTEXT</span>
                 <!-- TODO: Context for decision 03 -->
-                <span class="decision-text">TODO: Ambiguous names, garbled phone audio, or overlapping speakers resulted in low-confidence model extractions.</span>
+                <span class="decision-text">TODO: what was going on.</span>
               </div>
               <div class="decision-row">
                 <span class="decision-label">OPTIONS</span>
                 <!-- TODO: Options evaluated for decision 03 -->
-                <span class="decision-text">TODO: Best-effort guessing with implicit confirmation versus explicit clarification question versus immediate fallback.</span>
+                <span class="decision-text">TODO: what the options were.</span>
               </div>
               <div class="decision-row decision-row-call">
                 <span class="decision-label">CALL</span>
                 <!-- TODO: Final call for decision 03 -->
-                <span class="decision-text">TODO: Explicit targeted disambiguation prompt isolating only the unclear entity.</span>
+                <span class="decision-text">TODO: what you decided.</span>
               </div>
               <div class="decision-row">
                 <span class="decision-label">WHY</span>
                 <!-- TODO: Rationale for decision 03 -->
-                <span class="decision-text">TODO: Guessing created downstream session corruption, while targeted reprompting resolved ambiguity in over 85% of cases.</span>
+                <span class="decision-text">TODO: why.</span>
               </div>
             </div>
           </article>
@@ -1203,22 +1203,22 @@
               <div class="decision-row">
                 <span class="decision-label">CONTEXT</span>
                 <!-- TODO: Context for decision 04 -->
-                <span class="decision-text">TODO: Evaluated third-party voice agent platforms against proprietary domain routing and compliance rules.</span>
+                <span class="decision-text">TODO: what was going on.</span>
               </div>
               <div class="decision-row">
                 <span class="decision-label">OPTIONS</span>
                 <!-- TODO: Options evaluated for decision 04 -->
-                <span class="decision-text">TODO: Off-the-shelf voice SaaS provider versus building an in-house orchestration layer on raw model APIs.</span>
+                <span class="decision-text">TODO: what the options were.</span>
               </div>
               <div class="decision-row decision-row-call">
                 <span class="decision-label">CALL</span>
                 <!-- TODO: Final call for decision 04 -->
-                <span class="decision-text">TODO: Built the core orchestration layer in-house while integrating best-of-breed modular models.</span>
+                <span class="decision-text">TODO: what you decided.</span>
               </div>
               <div class="decision-row">
                 <span class="decision-label">WHY</span>
                 <!-- TODO: Rationale for decision 04 -->
-                <span class="decision-text">TODO: Retained full control over prompt engineering, state persistence, security guardrails, and model vendor swapping.</span>
+                <span class="decision-text">TODO: why.</span>
               </div>
             </div>
           </article>
@@ -1232,7 +1232,7 @@
         <div class="section-head">
           <span class="section-eyebrow">05</span>
           <h2 id="eval-heading" class="section-h2">How we <em>evaluate</em> it</h2>
-          <p class="section-subtext">Automated regression sets and golden acoustic test suites tracking accuracy, latency, and conversation health.</p>
+          <p class="section-subtext">How this gets measured.</p>
         </div>
 
         <div class="delta-list">
@@ -1298,7 +1298,7 @@
           <!-- TODO: Insights learned from constructing the voice evaluation dataset -->
           <p class="callout-text">
             <!-- TODO -->
-            TODO: Synthetic speech benchmarks fail to reveal conversational turn collisions and regional accent drops. Building a ground-truth dataset from real field audio recordings exposed critical edge cases in barge-in timing and background acoustic noise.
+            TODO: one line on what building the eval set taught you.
           </p>
         </div>
       </div>
@@ -1322,7 +1322,7 @@
             <div class="entry-date">TODO: DATE</div>
             <!-- TODO: Text for entry 1 -->
             <div class="entry-body">
-              TODO: Closed beta launch to internal cohorts, collecting baseline latency traces and multi-turn error transcripts across real calls.
+              TODO: one line on what happened.
             </div>
           </div>
 
@@ -1332,7 +1332,7 @@
             <div class="entry-date">TODO: DATE</div>
             <!-- TODO: Text for entry 2 -->
             <div class="entry-body">
-              TODO: Deployed interruption handling updates, cutting unnecessary model cancellations and tuning audio buffer flush timings.
+              TODO: one line on what happened.
             </div>
           </div>
 
@@ -1342,7 +1342,7 @@
             <div class="entry-date">TODO: DATE</div>
             <!-- TODO: Text for entry 3 -->
             <div class="entry-body">
-              TODO: Expanded golden evaluation dataset with regional dialect samples and initiated benchmark validation for upcoming production rollout.
+              TODO: one line on what happened.
             </div>
           </div>
         </div>
@@ -1355,7 +1355,7 @@
         <div class="section-head">
           <span class="section-eyebrow">07</span>
           <h2 id="questions-heading" class="section-h2">Open <em>questions</em></h2>
-          <p class="section-subtext">Current architectural challenges and research problems under active iteration.</p>
+          <p class="section-subtext">Questions still open.</p>
         </div>
 
         <div class="questions-list">
@@ -1363,21 +1363,21 @@
             <span class="question-num">01</span>
             <!-- TODO: Question 01 -->
             <p class="question-text">
-              TODO: How to dynamically scale acoustic filler frequency without breaking the natural conversational cadence of experienced users?
+              TODO: an open question.
             </p>
           </div>
           <div class="question-item">
             <span class="question-num">02</span>
             <!-- TODO: Question 02 -->
             <p class="question-text">
-              TODO: What is the optimal balance between client-side voice activity detection and server-side speech energy verification on low-end mobile devices?
+              TODO: an open question.
             </p>
           </div>
           <div class="question-item">
             <span class="question-num">03</span>
             <!-- TODO: Question 03 -->
             <p class="question-text">
-              TODO: How should session state be persisted when network handoffs cause transient WebSocket disconnections during mid-sentence answers?
+              TODO: an open question.
             </p>
           </div>
         </div>
